@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geolocation.Updater", "Geolocation.Updater\Geolocation.Updater.csproj", "{AF57009D-4D68-4FA4-B1BA-488C3DBBFA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geolocation.API", "Geolocation.API\Geolocation.API.csproj", "{C7CAE78E-E072-47A4-A6B0-0C599D90EEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geolocation.Main", "Geolocation.Main\Geolocation.Main.csproj", "{1B2EF9BB-02CC-4D0E-AD2A-A4C514FB5ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geolocation.DAL", "Geolocation.DLL\Geolocation.DAL.csproj", "{9CBBF562-6764-4A0A-A0EB-C9390BDF5CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF57009D-4D68-4FA4-B1BA-488C3DBBFA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF57009D-4D68-4FA4-B1BA-488C3DBBFA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF57009D-4D68-4FA4-B1BA-488C3DBBFA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF57009D-4D68-4FA4-B1BA-488C3DBBFA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CAE78E-E072-47A4-A6B0-0C599D90EEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CAE78E-E072-47A4-A6B0-0C599D90EEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CAE78E-E072-47A4-A6B0-0C599D90EEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CAE78E-E072-47A4-A6B0-0C599D90EEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2EF9BB-02CC-4D0E-AD2A-A4C514FB5ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2EF9BB-02CC-4D0E-AD2A-A4C514FB5ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2EF9BB-02CC-4D0E-AD2A-A4C514FB5ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2EF9BB-02CC-4D0E-AD2A-A4C514FB5ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBBF562-6764-4A0A-A0EB-C9390BDF5CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBBF562-6764-4A0A-A0EB-C9390BDF5CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBBF562-6764-4A0A-A0EB-C9390BDF5CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBBF562-6764-4A0A-A0EB-C9390BDF5CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C2C4A32-03DD-4130-AED6-AEECA29D8543}
+	EndGlobalSection
+EndGlobal
