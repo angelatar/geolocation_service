@@ -7,10 +7,10 @@ namespace Geolocation.API.Controllers
     [ApiController]
     public class LocationController : ControllerBase
     {
-        [HttpGet]
-        public Task Get(string ipAdress)
-        {
+        //[HttpGet]
+        //public Task Get(string ipAdress)
+        //{
             
-        }
+        //}
     }
 }

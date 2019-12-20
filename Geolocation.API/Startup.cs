@@ -31,7 +31,7 @@ namespace Geolocation.API
 
             string connection = Configuration.GetConnectionString("Default");
             services.AddEntityFrameworkNpgsql()
-               .AddDbContext<GeoContext>(options => options.UseNpgsql(connection, optionsBuilder => optionsBuilder.MigrationsAssembly(".API")))
+               .AddDbContext<GeoContext>(options => options.UseNpgsql(connection, optionsBuilder => optionsBuilder.MigrationsAssembly("Geolocation.API")))
                .BuildServiceProvider();
         }
 
