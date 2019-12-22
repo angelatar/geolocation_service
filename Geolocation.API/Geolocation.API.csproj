@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Geolocation.DLL\Geolocation.DAL.csproj" />
+    <ProjectReference Include="..\Geolocation.DAL\Geolocation.DAL.csproj" />
   </ItemGroup>
 
 </Project>
