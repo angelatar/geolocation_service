@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Geolocation.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using AutoMapper;
 
 namespace Geolocation.API
 {
@@ -30,9 +24,15 @@ namespace Geolocation.API
             services.AddControllers();
 
             string connection = Configuration.GetConnectionString("Default");
-            services.AddEntityFrameworkNpgsql()
-               .AddDbContext<GeoContext>(options => options.UseNpgsql(connection, optionsBuilder => optionsBuilder.MigrationsAssembly("Geolocation.API")))
-               .BuildServiceProvider();
+            services.AddDbContext<GeoContext>(options => options.UseNpgsql(connection, optionsBuilder => optionsBuilder.MigrationsAssembly("Geolocation.API")));
+
+            services.AddServices();
+            services.AddAutoMapper(typeof(Startup));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo{ Title = "Geolocation", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +52,12 @@ namespace Geolocation.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Geolocation V1");
             });
         }
     }
